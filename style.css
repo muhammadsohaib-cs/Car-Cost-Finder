@@ -1,66 +1,130 @@
 /* styles.css */
 body {
-    font-family: Arial, sans-serif;
-    background-color: #f4f4f9;
-    color: #333;
-    margin: 0;
-    padding: 0;
-  }
-  
+  font-family: Arial, sans-serif;
+  background-image: url("horror-scene-domestic-space.jpg");
+  background-size: cover; /* Changed to cover for better responsiveness */
+  background-size: 100% 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  color: #e0e0e0; /* Light text color */
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  max-width: 400px;
+  margin: 50px auto;
+  background: rgba(255, 255, 255, 0.1); /* Glass effect */
+  backdrop-filter: blur(5px); /* Blur background */
+  border-radius: 10px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5); /* More prominent shadow */
+  padding: 30px;
+  transition: background 0.3s ease; /* Transition for background */
+}
+
+.container:hover {
+  background: rgba(255, 255, 255, 0.2); /* Darker on hover */
+}
+
+h1 {
+  text-align: center;
+  color: #ffff; 
+}
+
+.form-group {
+  margin-bottom: 15px;
+}
+
+label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold;
+  color: #000000; /* Light label color */
+}
+
+::placeholder {
+  color: #ffffff;
+}
+
+input {
+  width: 95%;
+  padding: 10px;
+  font-size: 1rem;
+  border: 1px solid #444; /* Darker border */
+  border-radius: 5px;
+  background-color: rgba(221, 218, 218, 0.355); /* Input background */
+  color: #e0e0e0; /* Light text color for input */
+  transition: border-color 0.3s ease; /* Transition for border color */
+}
+
+input:focus {
+  border-color: #00000000; /* Bright border on focus */
+  outline: none; /* Remove outline */
+}
+
+button {
+  width: 100%;
+  padding: 10px;
+  font-size: 1rem;
+  background-color: #000; /* Darker blue on hover */
+  color: #FFF;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease; /* Transition for hover */
+}
+
+button:hover {
+  background-color: #FFF; /* Bright button color */
+  color: #000;
+  transform: scale(1.05); /* Slightly enlarge button on hover */
+}
+
+.result {
+  margin-top: 20px;
+  padding: 10px;
+  background-color: rgba(255, 255, 255, 0.1); /* Glass effect for result */
+  border: 1px solid rgba(255, 255, 255, 0.2); /* Light border */
+  border-radius: 5px;
+  text-align: center;
+  font-size: 1.2rem;
+  color: #e0e0e0; /* Light text color for result */
+}
+
+/* Responsive Styles */
+@media (max-width: 600px) {
   .container {
-    max-width: 400px;
-    margin: 50px auto;
-    background: #fff;
-    padding: 20px;
-    border-radius: 10px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    padding: 20px; /* Reduce padding on smaller screens */
   }
-  
+
   h1 {
-    text-align: center;
-    color: #007BFF;
+    font-size: 1.5rem; /* Adjust heading size */
   }
-  
-  .form-group {
-    margin-bottom: 15px;
-  }
-  
-  label {
-    display: block;
-    margin-bottom: 5px;
-    font-weight: bold;
-  }
-  
+
   input {
-    width: 100%;
-    padding: 10px;
-    font-size: 1rem;
-    border: 1px solid #ddd;
-    border-radius: 5px;
+    font-size: 0.9rem; /* Smaller font size for inputs */
   }
-  
+
   button {
-    width: 100%;
-    padding: 10px;
-    font-size: 1rem;
-    background-color: #007BFF;
-    color: #fff;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
+    font-size: 0.9rem; /* Smaller font size for buttons */
   }
-  
-  button:hover {
-    background-color: #0056b3;
-  }
-  
+
   .result {
-    margin-top: 20px;
-    padding: 10px;
-    background-color: #f9f9f9;
-    border: 1px solid #ddd;
-    border-radius: 5px;
-    text-align: center;
-    font-size: 1.2rem;
+    font-size: 1rem; /* Adjust result font size */
   }
-  
+}
+
+@media (max-width: 400px) {
+  .container {
+    max-width: 90%; /* Use more of the screen width on very small screens */
+  }
+
+  h1 {
+    font-size: 1.2rem; /* Further adjust heading size */
+  }
+
+  input,
+  button {
+    font-size: 0.8rem; /* Smaller font size for inputs and buttons */
+  }
+}

@@ -1,118 +1,60 @@
- <!-- <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
-    
-    <div class="container">
-      <h1>Enhanced Annual Car Cost Finder</h1>
-      <form id="carCostForm">
-        <div class="form-group">
-          <label for="carCost">Car Cost:</label>
-          <input type="number" id="carCost" placeholder="e.g., 500000" required>
-        </div>
-        <div class="form-group">
-          <label for="fuel">Monthly Fuel Cost (Rs):</label>
-          <input type="number" id="fuel" placeholder="e.g., 150" required>
-        </div>
-        <div class="form-group">
-          <label for="maintenance">Monthly Maintenance Cost (Rs):</label>
-          <input type="number" id="maintenance" placeholder="e.g., 50" required>
-        </div>
-        <div class="form-group">
-          <label for="insurance">Monthly Insurance Cost (Rs):</label>
-          <input type="number" id="insurance" placeholder="e.g., 100" required>
-        </div>
-        <div class="form-group">
-          <label for="parking">Monthly Parking Cost (Rs):</label>
-          <input type="number" id="parking" placeholder="e.g., 75" required>
-        </div>
-        <div class="form-group">
-          <label for="tolls">Monthly Tolls Cost (Rs):</label>
-          <input type="number" id="tolls" placeholder="e.g., 30" required>
-        </div>
-        <div class="form-group">
-          <label for="depreciation">Annual Depreciation Cost (Rs):</label>
-          <input type="number" id="depreciation" placeholder="e.g., 2000" required>
-        </div>
-        <div class="form-group">
-            <label for="miscellaneous">Miscellaneous Monthly Costs (Rs):</label>
-            <input type="number" id="miscellaneous" placeholder="e.g., 20">
-        </div>
-        <button type="button" id="calculateBtn">Calculate Annual Cost</button>
-      </form>
-      <div id="result" class="result"></div>
-    </div>
-</body>
-<script src="app.js"></script>
-</html>  -->
-
-
-
-
-
-
-
 <!DOCTYPE html>
 <html lang="en">
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Enhanced Annual Car Cost Finder</title>
+        <title>Auto Cost Finder</title>
         <link rel="stylesheet" href="style.css">
     </head>
     <body>
       <div class="container">
-        <h1>Enhanced Annual Car Cost Finder</h1>
+        <h1>Auto Cost Finder</h1>
         <form id="carCostForm">
           <div class="form-group">
             <label for="loan">Car Cost (Rs):</label>
-            <input type="number" id="carCost" placeholder="e.g., 300000" required>
+            <input class="example" type="number" id="carCost" placeholder="e.g., 300000" required>
           </div>
           <div class="form-group">
             <label for="fuel">Fuel Price per Liter (Rs):</label>
-            <input type="number" id="fuel" placeholder="e.g., 150" required>
+            <input class="example"  type="number" id="fuel" placeholder="e.g., 150" required>
           </div>
           <div class="form-group">
             <label for="efficiency">Fuel Efficiency (km/L):</label>
-            <input type="number" id="efficiency" placeholder="e.g., 15" required>
+            <input class="example"  type="number" id="efficiency" placeholder="e.g., 15" required>
           </div>
           <div class="form-group">
             <label for="mileage">Annual Mileage (km):</label>
-            <input type="number" id="mileage" placeholder="e.g., 20000" required>
+            <input class="example"  type="number" id="mileage" placeholder="e.g., 20000" required>
           </div>
           <div class="form-group">
             <label for="maintenance">Monthly Maintenance Cost (Rs):</label>
-            <input type="number" id="maintenance" placeholder="e.g., 50" required>
+            <input class="example"  type="number" id="maintenance" placeholder="e.g., 50" required>
           </div>
           <div class="form-group">
             <label for="insurance">Monthly Insurance Cost (Rs):</label>
-            <input type="number" id="insurance" placeholder="e.g., 100" required>
+            <input class="example"  type="number" id="insurance" placeholder="e.g., 100" required>
           </div>
           <div class="form-group">
             <label for="parking">Monthly Parking Cost (Rs):</label>
-            <input type="number" id="parking" placeholder="e.g., 75" required>
+            <input class="example"  type="number" id="parking" placeholder="e.g., 75" required>
           </div>
           <div class="form-group">
             <label for="tolls">Monthly Tolls Cost (Rs):</label>
-            <input type="number" id="tolls" placeholder="e.g., 30" required>
+            <input class="example"  type="number" id="tolls" placeholder="e.g., 30" required>
           </div>
           <div class="form-group">
             <label for="depreciation">Annual Depreciation Cost (Rs):</label>
-            <input type="number" id="depreciation" placeholder="e.g., 2000" required>
+            <input class="example"  type="number" id="depreciation" placeholder="e.g., 2000" required>
           </div>
           <div class="form-group">
             <label for="miscellaneous">Miscellaneous Monthly Costs (Rs):</label>
-            <input type="number" id="miscellaneous" placeholder="e.g., 20">
+            <input class="example" type="number" id="miscellaneous" placeholder="e.g., 20">
           </div>
           <button type="button" id="calculateBtn">Calculate Annual Cost</button>
         </form>
         <div id="result" class="result"></div>
       </div>
   <script src="app.js"></script>
+  <script src="exel.xlsx"></script>
 </body>
 </html>
