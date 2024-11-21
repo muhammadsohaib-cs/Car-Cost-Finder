@@ -1,12 +1,6 @@
 /* styles.css */
 body {
   font-family: Arial, sans-serif;
-  background-image: url("horror-scene-domestic-space.jpg");
-  background-size: cover; /* Changed to cover for better responsiveness */
-  background-size: 100% 100%;
-  background-position: center;
-  background-repeat: no-repeat;
-  color: #e0e0e0; /* Light text color */
   margin: 0;
   padding: 0;
 }
@@ -14,7 +8,7 @@ body {
 .container {
   max-width: 400px;
   margin: 50px auto;
-  background: rgba(255, 255, 255, 0.1); /* Glass effect */
+  background: rgb(255, 255, 255,0.1); /* Glass effect */
   backdrop-filter: blur(5px); /* Blur background */
   border-radius: 10px;
   box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5); /* More prominent shadow */
@@ -39,35 +33,38 @@ label {
   display: block;
   margin-bottom: 5px;
   font-weight: bold;
-  color: #000000; /* Light label color */
+  color: #fff; /* Light label color */
 }
 
 ::placeholder {
-  color: #ffffff;
+  color: #ccc;
+  font-size: large;
 }
 
 input {
   width: 95%;
   padding: 10px;
   font-size: 1rem;
-  border: 1px solid #444; /* Darker border */
+  border: 1px solid #e0e0e0; /* Darker border */
   border-radius: 5px;
-  background-color: rgba(221, 218, 218, 0.355); /* Input background */
-  color: #e0e0e0; /* Light text color for input */
+  background-color: rgba(221, 218, 218, 0.1); /* Input background */
+  color: #e0e0e0;
   transition: border-color 0.3s ease; /* Transition for border color */
 }
 
 input:focus {
-  border-color: #00000000; /* Bright border on focus */
-  outline: none; /* Remove outline */
+  border-color: #000; /* Bright border on focus */
+  outline: #000; /* Remove outline */
 }
 
 button {
-  width: 100%;
-  padding: 10px;
-  font-size: 1rem;
-  background-color: #000; /* Darker blue on hover */
-  color: #FFF;
+  display: block; /* Make the button a block element */
+  margin: 0 auto; /* Center the button */
+  width: 70%; /* Keep the width as desired */
+  padding: 15px;
+  font-size: 1.2rem;
+  background-color: #fff; /* Darker blue on hover */
+  color: #000;
   border: none;
   border-radius: 5px;
   cursor: pointer;
@@ -75,20 +72,30 @@ button {
 }
 
 button:hover {
-  background-color: #FFF; /* Bright button color */
-  color: #000;
+  background-color: #000; /* Bright button color */
+  color: #fff;
   transform: scale(1.05); /* Slightly enlarge button on hover */
 }
 
 .result {
   margin-top: 20px;
   padding: 10px;
-  background-color: rgba(255, 255, 255, 0.1); /* Glass effect for result */
-  border: 1px solid rgba(255, 255, 255, 0.2); /* Light border */
+  background-color: rgba(255, 255, 255, 0.1); /* Glass effect for result */ /* Light border */
   border-radius: 5px;
   text-align: center;
   font-size: 1.2rem;
-  color: #e0e0e0; /* Light text color for result */
+  color: #fff; /* Light text color for result */
+}
+
+.back-video {
+  position:fixed; /* Change to absolute to scroll with the content */
+  top: 0; /* Start from the top */
+  left: 50%; /* Position it horizontally in the middle */
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  object-fit: cover; /* Ensure the video covers the entire area */
+  transform: translateX(-50%); /* Center the video horizontally */
+  z-index: -1; /* Send the video behind other content */
 }
 
 /* Responsive Styles */

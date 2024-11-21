@@ -32,4 +32,5 @@
       <strong>Annual Fuel Cost:</strong> Rs${annualFuelCost.toFixed(2)} <br>
       <strong>Annual Cost (including depreciation and fuel):</strong> Rs${annualCost.toFixed(2)}
     `;
+    
 });
